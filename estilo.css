@@ -1,0 +1,128 @@
+body{margin: 0; padding: 0; box-sizing: border-box;}
+#pagina{display: flex; flex-flow: column nowrap;}
+
+/*barraSuperior tiene las dos barras con opciones, que aparecen al tope de la pagina*/
+.barraSuperior{display: flex; flex-flow: column nowrap;  background: url(imagenes/B.jpg); background-size: 100% 100%;padding-bottom: 400px;}
+
+/*navSup contiene registro iniciar sesion y carrito*/
+.navSup{ width: 100%;}
+.navSup nav ul{display: flex; background-color: rgb(59, 61, 61); margin: 0 auto;}
+.navSup nav ul li{list-style: none; margin: 0 auto; color: white;}
+.navSup nav ul li a{text-decoration: none; color: white; }
+
+/*navInf contiene la lista hombre y lista mujer y la barra de busqueda*/
+.navInf{ width: 100%;}
+.navInf nav ul{ display: flex; justify-content: right; }
+.navInf nav ul li{list-style: none; margin-left: 20px;  color: rgb(81, 81, 81); opacity: 30;}
+.navInf nav ul li a{text-decoration: none; color: rgb(81, 81, 81);}
+
+
+/*lista hombre*/
+#listaHombre{color: black; display: flex; flex-flow: column; display: none; position: absolute;}
+
+/* lista mujer*/
+#listaMujer{ color: black; display: flex; flex-flow: column; display: none; position: absolute;}
+
+/*elementos compartidos por las listas hombre y mujer*/
+.listaInfo{display: flex; background-color: white;}
+
+.subLista ul{ flex-direction: column;}
+
+.listaSubLista{margin-right: 40px; padding: 0%;}
+
+.listaSubLista li{margin-top: 10px; margin-bottom: 20px;}
+
+.cerrar{margin-left: 10px; color: black; position: relative;}
+
+.oferta{background-color: rgb(40, 40, 45); padding-left: 20px; margin-top: -10%;}
+
+.oferta h1, p{color:  white; text-align: center;}
+
+.oferta h1{margin-right: 20px;}
+
+.buscar{padding-right: 50px;}
+
+/*elementos compartidos por las listas hombre y mujer*/
+
+/*los elementos que forman parte del section*/
+.sectionIndex{ margin-left: 70px; margin-right: 70px; display: flex; margin-top: 40px; margin-bottom: 40px; flex-direction: column; border: 2px solid black; background-color: aliceblue;}
+
+.navCentroPag ul{display: flex; justify-content: left;}
+.navCentroPag ul li{list-style: none; margin-right: 30px; font-style: italic;}
+
+.sectionIndex img{width: 95%;}
+
+.fila{display: flex; padding: 30px; flex-wrap: wrap;}
+.columna{ flex: 25%;}
+
+/*el texto que esta oculto y se va a mostrar*/
+.textoto p{position: absolute;  justify-content: center; opacity: 0%;  border: 3px solid black; padding: 5%; margin-right: 17px; transition: 0.1s; color: black;
+background-color: white; font-style: oblique;}
+
+.contenedor{position: relative;}
+
+/*el hover para mostrar el texto*/
+.contenedor :hover p{ position: relative; opacity: 100%; padding: 20%;}
+
+/*el hover para mostrar la animacion de la foto*/
+.contenedor :hover img{border-radius: 15px; box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.7); padding-top: 9px; transition: 150ms; background-color: aliceblue;}
+/*fin de los elementos que forman parte del section*/
+
+
+/*elementos que forman parte del footer*/
+footer{background-color: aliceblue; margin-top: 20px;}
+.fondo{ margin-left: 70px; margin-right: 70px; display: flex; flex-direction: column; }
+.datosFooter{display: flex; justify-content: center;}
+.listasDatosFooter{margin-right: 40px;}
+.listasDatosFooter ul li{margin-top: 20px; list-style: none; text-decoration: none;}
+.redes{display: flex; background-color: aqua; justify-content: center;}
+.redes img{width: 30px; padding-right: 80px; padding-left: 80px; padding-top: 20px; padding-bottom: 20px;}
+/*fin de los elementos que forman parte del footer*/
+
+/*clases del reloj y la fecha*/
+.formulario{display: flex; margin-left: 45px;}
+.formulario input{ width: 200px; height: 20px; text-align: center;}
+
+/*aparir de aca estan los elementos pertenecientes a la ventana "Contacto"*/
+
+/*elementos del header de "contacto"*/
+.barraSuperiorContacto{display: flex; flex-flow: column nowrap; padding-bottom: 400px;}
+.headerContacto{background: url(imagenes/collage-COLORES.png); background-size: 100% 155%;}
+
+.navInfContacto{ width: 100%;background-color: white; padding-bottom: 100px;}
+.navInfContacto nav ul{ display: flex; float: right;}
+.navInfContacto nav ul li{list-style: none; margin-left: 20px;  color: rgb(81, 81, 81); opacity: 30; font-size: 20px;}
+.navInfContacto nav ul li a{text-decoration: none; color: rgb(81, 81, 81);}
+/*fin de los elementos del header de "contacto"*/
+
+/*elementos del sction de "contacto"*/
+.sectionContacto{display: flex; justify-content: center;}
+.sesionRegistro h1{margin-left: 10px;}
+.sesionRegistro form{display: flex; flex-direction: column; justify-content: center;  margin-right: 10px; margin-left: 10px;}
+.sesionRegistro form button{ margin-top: 10px; width: 130px; height: 50px; background-color: white; font-style: oblique;}
+.ingreso{width: 420px; height: 20px; margin-top: 10px; margin-bottom: 10px;}
+/*fin de los elementos del section de "contacto"*/
+
+/*fin de los elementos pretenecientes a "contacto"*/
+
+@media (max-width:900px){
+    .navInf nav ul li{font-size: 10px; margin-left: 15px; padding: 0; color: black;}
+    .navInfContacto nav ul li{ font-size: 18px; margin-left: 15px; padding: 0; color: black;}
+    .fila{display: flex; flex-direction: column; padding: 30px; flex-wrap: wrap;}
+    .navCentroPag ul{display: flex; flex-direction: column; justify-content: left;}
+    .navCentroPag ul li{margin-top: 20px;}
+    .datosFooter{display: flex; flex-direction: column; justify-content: center;}
+    .listasDatosFooter{font-size: 12px; padding-left: 45px;} 
+    .listasDatosFooter ul{display: flex; justify-content: start; border: 1px solid black;}
+    .listasDatosFooter ul li{margin-right: 18px; margin-left: 0px;}
+    .redes img{width: 30px; padding-right: 40px; padding-left: 40px; padding-top: 20px; padding-bottom: 20px;}
+    .sectionContacto{display: flex; justify-content: center; flex-direction: column;}
+}
+
+@media (max-width:700px){
+    .navInfContacto nav ul li{ font-size: 10px;  color: black;}
+    .buscar{padding-right: 0px;}
+    .listasDatosFooter{font-size: 9px; padding-left: 45px;}
+    .listasDatosFooter ul li{padding-right: 11px; margin-right: 16px; margin-left: -20px;}
+    .redes img{width: 30px; padding-right: 30px; padding-left: 30px; padding-top: 20px; padding-bottom: 20px;}
+}

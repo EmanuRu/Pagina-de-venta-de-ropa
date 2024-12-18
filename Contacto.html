@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="pagina">
+        <header class="headerContacto"><!--La mayoria es un copia y pega de index, solo cambie unas clases para poder usarlas en el estilo-->
+            <div class="barraSuperiorContacto"><!--solo la parte de section es distinta-->
+                
+                <div class="navSup">
+                    <nav>
+                        <ul>
+                            <li>
+                                Registro
+                            </li>
+                            <li>
+                                Iniciar sesion
+                            </li>
+                            <li>
+                                <a href="index.html">Carrito</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navInfContacto">
+                      
+                    <nav>
+                        <ul>
+                            <li>
+
+                                <span onclick="mostrarHom();">Hombre</span>
+
+                                <span class="cerrar" onclick="OcultarHom();">&times;</span>
+
+                                <div id="listaHombre">
+
+                                    <div class="listaInfo">
+
+                                        <div class="subLista">
+                                            <ul class="listaSubLista">
+                                                <li>
+                                                    <b>Casual</b>
+                                                </li>
+                                                <li>
+                                                    Abrigos 
+                                                </li>
+                                                <li>
+                                                    Deportivos
+                                                </li>
+                                                <li>
+                                                    Pantalones
+                                                </li>
+                                                <li>
+                                                    Remeras
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="subLista">
+                                            <ul class="listaSubLista">
+                                                <li>
+                                                    <b>Formal</b>  
+                                                </li>
+                                                <li>
+                                                    Chaquetas 
+                                                </li>
+                                                <li>
+                                                    Camisetas
+                                                </li>
+                                                <li>
+                                                    Trajes
+                                                </li>
+                                                <li>
+                                                    Pantalones
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="oferta">
+                                        <h1>Ofertas de invierno</h1>
+                                        <p>Desde 50% de descuento</p>
+                                    </div>                          
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <span onclick="mostrarMuj();">Mujer</span>
+
+                                <span class="cerrar" onclick="OcultarMuj();">&times;</span>
+
+                                <div id="listaMujer">
+
+                                    <div class="listaInfo">
+
+                                        <div class="subLista">
+                                            <ul class="listaSubLista">
+                                                <li>
+                                                    <b>Casual</b>
+                                                </li>
+                                                <li>
+                                                    Remeras 
+                                                </li>
+                                                <li>
+                                                    Bikinis
+                                                </li>
+                                                <li>
+                                                    Juvenil
+                                                </li>
+                                                <li>
+                                                    Deportivo
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="subLista">
+                                            <ul class="listaSubLista">
+                                                <li>
+                                                    <b>Formal/Noche</b>  
+                                                </li>
+                                                <li>
+                                                    Vestidos
+                                                </li>
+                                                <li>
+                                                    Accesorios
+                                                </li>
+                                                <li>
+                                                    Trajes
+                                                </li>
+                                                <li>
+                                                    Nueva Temporada
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="oferta">
+                                        <h1>Ofertas de Otoño</h1>
+                                        <p>Desde 50% de descuento</p>
+                                    </div>                          
+                                </div>
+                            </li>
+                            <li>
+                                <span style="color: aqua;">Nosotro</span>
+                            </li>
+                            <li>
+                                <a href="">Novedades</a>
+                            </li>
+                            <li>
+                                <a href="">Contacto</a>
+                            </li>
+                            <li>
+                                <form action="" class="buscar">
+                                    <input type="text" style="width: 110px; height: 14px;" placeholder="Buscar">
+                                    <button style="width: 25px; height: 21px; padding-left: 2px;" ><img src="imagenes/lupa.png" alt="lupa" style="width: 15px; height: 11px;"></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="sectionContacto"><!--este section guarda dentro de si dos divs llamados sesionRegistro, y cada sesionRegistro tiene su formulario-->
+
+            <div class="sesionRegistro">
+                <h1>Si ya tenes registrada una cuenta con nosotros</h1>
+                <form action="">
+                    <input type="text" placeholder="Email" class="ingreso">
+                    <input type="text" placeholder="Clave" class="ingreso">
+                    <Button>
+                        INGRESAR
+                    </Button>
+                </form>
+            </div>
+            <div class="sesionRegistro">
+                <h1>Si sos nuevo usuario</h1>
+                <form action="">
+                    <input type="text" placeholder="Email" class="ingreso">
+                    <input type="text" placeholder="Clave" class="ingreso">
+                    <input type="text" placeholder="Confirmar clave" class="ingreso">
+                    <button>
+                        CREAR CUENTA
+                    </button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="fondo">
+                <div class="datosFooter">
+                    <div class="listasDatosFooter">
+                        <ul>
+                            <li>
+                                <B>Informacion</B>
+                            </li>
+                            <li>
+                                Nosotros
+                            </li>
+                            <li>
+                                Sucursales
+                            </li>
+                            <li>
+                                Marcas
+                            </li>
+                            <li>
+                                Mapa del sitio
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listasDatosFooter">
+                        <ul>
+                            <li>
+                                <b>Porqué comprar</b>
+                            </li>
+                            <li>
+                                Envios internacionales
+                            </li>
+                            <li>
+                                Compras seguras
+                            </li>
+                            <li>
+                                Testimonios
+                            </li>
+                            <li>
+                                Mayoristas
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listasDatosFooter">
+                        <ul>
+                            <li>
+                                <b>Tu cuenta</b>
+                            </li>
+                            <li>
+                                Tus descuentos
+                            </li>
+                            <li>
+                                Seguimiento
+                            </li>
+                            <li>
+                                Favoritos
+                            </li>
+                            <li>
+                                Historial
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listasDatosFooter">
+                        <ul>
+                            <li>
+                                <b>Noticias</b>
+                            </li>
+                            <li>
+                                Nuevas sucursales
+                            </li>
+                            <li>
+                                Ofertas y descuentos
+                            </li>
+                            <li>
+                                Dia de la madre
+                            </li>
+                            <li>
+                                Temporada 2022/2023
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listasDatosFooter">
+                        <ul>
+                            <li>
+                                <b>Servicios</b>
+                            </li>
+                            <li>
+                                Asesoramiento online
+                            </li>
+                            <li>
+                                Bolsa de trabajo
+                            </li>
+                            <li>
+                                Catalogo online
+                            </li>
+                            <li>
+                                Guarderia
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="redes">
+                    <img src="imagenes/facebook.png" alt="">
+                    <img src="imagenes/twitter.png" alt="">
+                    <img src="imagenes/instagram.png" alt="">
+                    <img src="imagenes/pinterest.png" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="codigo.js"></script>   
+    </body>
+</html>

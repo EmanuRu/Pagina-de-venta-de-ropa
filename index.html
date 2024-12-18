@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desempeño n2 AW 2 Tomas Ruibal</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<!--Los items "Contacto" y "Carrito" son los que sirven para ir entre paginas-->
+
+    <div id="pagina">
+        <header>
+            <div class="barraSuperior"><!-- barra superiror contiene a navSup y navInf. navSup contiene la lista registro, iniciar sesion, carrito-->
+                                       <!--navInf contiene hombre, mujer, nosotros, novedades, contacto y la barra de busqueda --> 
+                <div class="navSup">
+                    <nav>
+                        <ul>
+                            <li>
+                                Registro
+                            </li>
+                            <li>
+                                Iniciar sesion
+                            </li>
+                            <li>
+                                <span style="color: aqua;">Carrito</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navInf"> <!--en navInf los items Hombre y Mujer cuentan con sus propios divs que contienen listas relacionadas a ropa
+                                     masculina y femenina respectivamente, al clickear cualquiera de las dos palabras se despliegan las listas
+                                     contenidas, ademas al lado de hombre y mujer hay una "X" que permite "cerrar" las listas que se abrieron-->
+                    <nav>
+                        <ul>
+                            <li>
+
+                                <span style="color: aqua;" onclick="mostrarHom();">Hombre</span> <!--item Hombre con el onclic mostrarHom()-->
+
+                                <span class="cerrar" onclick="OcultarHom();">&times;</span><!--la "X" para cerrar la lista-->
+
+                                <div id="listaHombre"><!--listaHombre tiene dos divs listaInfo y oferta-->
+
+                                    <div class="listaInfo"><!--Llista Info cuenta con dos divs de clase subLista-->
+
+                                        <div class="subLista"><!-- las clases subLista cuentan con su propia unordened list -->
+                                            <ul class="listaSubLista">
+                                                <li>
+                                                    <b>Casual</b>
+                                                </li>
+                                                <li>
+                                                    Abrigos 
+                                                </li>
+                                                <li>
+                                                    Deportivos
+                                                </li>
+                                                <li>
+                                                    Pantalones
+                                                </li>
+                                                <li>
+                                                    Remeras
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="subLista"><!-- las clases subLista cuentan con su propia unordened list -->
+                                            <ul class="listaSubLista">
+                                                <li>
+                                                    <b>Formal</b>  
+                                                </li>
+                                                <li>
+                                                    Chaquetas 
+                                                </li>
+                                                <li>
+                                                    Camisetas
+                                                </li>
+                                                <li>
+                                                    Trajes
+                                                </li>
+                                                <li>
+                                                    Pantalones
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="oferta"><!--oferta forma parte del contenido de ListaHombre junto con listaInfo -->
+                                        <h1>Ofertas de invierno</h1>
+                                        <p>Desde 50% de descuento</p>
+                                    </div>                          
+                                </div>                                
+                            </li>
+
+                            <li>
+                                <span onclick="mostrarMuj();">Mujer</span> <!--en la parte de mujer hice un copia y pega de lo de arriba-->
+
+                                <span class="cerrar" onclick="OcultarMuj();">&times;</span>
+
+                                <div id="listaMujer">
+
+                                    <div class="listaInfo">
+
+                                        <div class="subLista">
+                                            <ul class="listaSubLista">
+                                                <li>
+                                                    <b>Casual</b>
+                                                </li>
+                                                <li>
+                                                    Remeras 
+                                                </li>
+                                                <li>
+                                                    Bikinis
+                                                </li>
+                                                <li>
+                                                    Juvenil
+                                                </li>
+                                                <li>
+                                                    Deportivo
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="subLista">
+                                            <ul class="listaSubLista">
+                                                <li>
+                                                    <b>Formal/Noche</b>  
+                                                </li>
+                                                <li>
+                                                    Vestidos
+                                                </li>
+                                                <li>
+                                                    Accesorios
+                                                </li>
+                                                <li>
+                                                    Trajes
+                                                </li>
+                                                <li>
+                                                    Nueva Temporada
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="oferta">
+                                        <h1>Ofertas de Otoño</h1>
+                                        <p>Desde 50% de descuento</p>
+                                    </div>                          
+                                </div>
+                            </li>
+                            <li><!--apartir de aca ya vuelven los items "normales" de navInf-->
+                                <a href="">Nosotro</a>
+                            </li>
+                            <li>
+                                <a href="">Novedades</a>
+                            </li>
+                            <li>
+                                <a href="Contacto.html">Contacto</a><!--"Contacto permite ir a la pagina "Contacto.html"-->
+                            </li>
+                            <li>
+                                <form action="" class="buscar"> <!--el ultimo item de la lista es la barra de busqueda-->
+                                    <input type="text" style="width: 110px; height: 14px;" placeholder="Buscar">
+                                    <button style="width: 25px; height: 21px; padding-left: 2px;" ><img src="imagenes/lupa.png" alt="lupa" style="width: 15px; height: 11px;"></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <form action="" class="formulario" name="formuFecha"><!--esta es la fecha que aparece al inicio de la pagina-->
+                        <input type="text" name="barraFecha">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <section class="sectionIndex">
+            <div class="navCentroPag"><!--esta es la "lista" que aparece sobre las fotos en el centro de la pagina-->
+                <nav>
+                    <ul>
+                        <li>
+                            <span style="color: aqua;"><b>POPULAR</b></span>
+                        </li>
+                        <li>
+                            <b>NOVEDADES</b>
+                        </li>
+                        <li>
+                            <b>MAS VENDIDOS</b>
+                        </li>
+                        <li>
+                            <b>MUY PRONTO</b>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="fila"><!--Las fotos estan distribuidas en una fila y tres columnas-->
+                <div class="columna"><!--cada columna almacena dos fotos-->
+                    <div class="contenedor"><!--contenedor va a almacenar el div que gusarda la foto-->
+                        <div>
+                            
+                            <img src="imagenes/item-1.png" alt="">
+
+                            <div class="textoto"><!--destro del div de la foto tambien esta el div que guarda el texto que se despliega en la pagina-->
+                                <p>
+                                    <b>Blazer de Mujer</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor">
+                        <div>
+                            
+                            <img src="imagenes/item-2.png" alt="">
+
+                            <div class="textoto">
+                                <p><b>Pantalon Mjuer</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="contenedor">
+                        <div>
+                            
+                            <img src="imagenes/item-3.png" alt="">
+
+                            <div class="textoto">
+                                <p><b>Remera Hombre</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor">
+                        <div>
+                            
+                            <img src="imagenes/item-4.png" alt="">
+
+                            <div class="textoto">
+                                <p><b>Campera Hombre</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="contenedor">
+                        <div>
+                            
+                            <img src="imagenes/item-5.png" alt="">
+
+                            <div class="textoto">
+                                <p><b>Pantalon Mujer</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor">
+                        <div>
+                            
+                            <img src="imagenes/item-6.png" alt="">
+
+                            <div class="textoto">
+                                <p><b>Remera Mujer</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="fondo"><!--fondo almacena todo lo que hay en el footer-->
+                <div class="datosFooter"><!--datosFooter va a guardar dentro de si cuatro divs-->
+                    <div class="listasDatosFooter"><!--cada uno de los listaDatosFooter guada sus propias listas con sus items-->
+                        <ul>
+                            <li>
+                                <B>Informacion</B>
+                            </li>
+                            <li>
+                                Nosotros
+                            </li>
+                            <li>
+                                Sucursales
+                            </li>
+                            <li>
+                                Marcas
+                            </li>
+                            <li>
+                                Mapa del sitio
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listasDatosFooter">
+                        <ul>
+                            <li>
+                                <b>Porqué comprar</b>
+                            </li>
+                            <li>
+                                Envios internacionales
+                            </li>
+                            <li>
+                                Compras seguras
+                            </li>
+                            <li>
+                                Testimonios
+                            </li>
+                            <li>
+                                Mayoristas
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listasDatosFooter">
+                        <ul>
+                            <li>
+                                <b>Tu cuenta</b>
+                            </li>
+                            <li>
+                                Tus descuentos
+                            </li>
+                            <li>
+                                Seguimiento
+                            </li>
+                            <li>
+                                Favoritos
+                            </li>
+                            <li>
+                                Historial
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listasDatosFooter">
+                        <ul>
+                            <li>
+                                <b>Noticias</b>
+                            </li>
+                            <li>
+                                Nuevas sucursales
+                            </li>
+                            <li>
+                                Ofertas y descuentos
+                            </li>
+                            <li>
+                                Dia de la madre
+                            </li>
+                            <li>
+                                Temporada 2022/2023
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listasDatosFooter">
+                        <ul>
+                            <li>
+                                <b>Servicios</b>
+                            </li>
+                            <li>
+                                Asesoramiento online
+                            </li>
+                            <li>
+                                Bolsa de trabajo
+                            </li>
+                            <li>
+                                Catalogo online
+                            </li>
+                            <li>
+                                Guarderia
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <form action="" class="formulario" name="formuReloj"><!--este es el reloj que se encuentra al final de la pagina-->
+                        <p>
+                            <input type="text" name="barraReloj">
+                        </p>
+                    </form>
+                </div>
+                <div class="redes">
+                    <img src="imagenes/facebook.png" alt="">
+                    <img src="imagenes/twitter.png" alt="">
+                    <img src="imagenes/instagram.png" alt="">
+                    <img src="imagenes/pinterest.png" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="codigo.js"></script><!--el script que cree para la pagina-->
+</body>
+</html>
